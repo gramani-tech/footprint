@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Author';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/src/assets/font/Author-BF64f7329d7346e.otf') format('otf');
+  }
+
+  body{
+    font-family: 'Author';
+    background-color: #FAF7F5;
+  }
+}
