@@ -2,6 +2,8 @@ import Nav from "./components/Nav"
 import SectionOne from "./components/SectionOne"
 import AboutUs from "./components/AboutUs"
 import Section3 from "./components/section3"
+import Waitlist from "./components/Waitlist"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <SectionOne/>
       <AboutUs/>
       <Section3/>
+      <Waitlist/>
+      <Footer/>
     </div>
   )
 }
