@@ -12,7 +12,7 @@ export default function Nav() {
             <img src={logo} alt='logo' className=' object-cover w-[90px]'/>
         </div>
         
-        <ul className={`${open? 'absolute md:static w-[50%] sm:w-[40%] text-xl md:text-[1rem] md:w-fit  px-10 md:px-0 py-3 md:py-0 grid gap-2 z-50 h-full transition-all bg-white md:bg-none left-0':'hidden transition-all'}   md:flex gap-7`}>
+        <ul className={`${open? 'absolute md:static w-[50%] sm:w-[40%] text-[1.1rem] md:text-[1rem] md:w-fit  px-10 md:px-0 py-3 md:py-0 grid gap-2 z-50 h-full transition-all bg-white md:bg-none left-0':'hidden transition-all'}   md:flex gap-7`}>
             <img src={close} className='block md:hidden w-[30px] cursor-pointer ml-auto' onClick={()=>setOpen(false)}/>
             <li className='font-bold'>Home</li>
             <li>About Us</li>
@@ -24,16 +24,6 @@ export default function Nav() {
         <button className=' px-2 bg-yellow border-0 p-1 font-bold '>Get Started</button>
 
         <img src={menu} alt='menu-icon' className='w-[30px] h-[30px] md:hidden cursor-pointer' onClick={()=>setOpen(true)}/>
-
-        {/* <div>
-        <ul className=' absolute w-[50%]  px-7 py-10  grid gap-2 z-50  h-full bg-white left-0'>
-            <li className='font-bold'>Home</li>
-            <li>About Us</li>
-            <li>Talents</li>
-            <li>Contact Us</li>
-            <li>Policy</li>
-        </ul>
-        </div> */}
     </div>
   )
 }
