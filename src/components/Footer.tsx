@@ -12,7 +12,7 @@ export default function Footer() {
             <img src={logo} alt='logo' className='w-[150px] object-cover'/>
             <p className='py-3 opacity-70'>Lorem ipsum dolor sit amet consectetur. Sagittis egestas erat tortor donec suspendisse pretium tellus egestas arcu.</p>
             
-            <div className='flex gap-10 md:gap-5 my-3'>
+            <div className='flex justify-center md:justify-start gap-10 md:gap-5 my-3'>
                 <div className='bg-black rounded-full  w-[23px] h-[23px] p-1  flex justify-center'>
                     <img src={facebook} alt='facebook-icon' />
                 </div>
@@ -29,8 +29,8 @@ export default function Footer() {
             </div>
         </div>
         
-        <div className='flex flex-wrap md:flex-nowrap my-5 md:gap-10 justify-between '>
-            <ul >
+        <div className='  text-center text-nowrap sm:flex flex-wrap md:flex-nowrap my-5 md:gap-10 justify-between '>
+            <ul className='my-5 '>
                 <p className='opacity-70 py-3'>Company</p>
                 <li className='py-2'>About us</li>
                 <li className='py-2'>Contact us</li>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <li className='py-2'>Press</li>
             </ul>
 
-            <ul>
+            <ul className='my-5'>
                <p className='py-3 opacity-70'>Services</p>
                 <li className='py-2'>Mentorship</li>
                 <li className='py-2'>Resume Review</li>
@@ -46,7 +46,7 @@ export default function Footer() {
                 <li className='py-2'>Talent Recruitment</li>
             </ul>
 
-            <ul>
+            <ul className='my-5  ' >
                 <p className='py-3 opacity-70'>Legal</p>
                 <li className='py-2'>Privacy Policy</li>
                 <li className='py-2'>Terms & Conditions</li>
