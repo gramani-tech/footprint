@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
         </div>
         
-        <div className='  text-center text-nowrap sm:flex flex-wrap md:flex-nowrap my-5 md:gap-10 justify-between '>
+        <div className='  text-center sm:text-start text-nowrap sm:flex flex-wrap md:flex-nowrap my-5 md:gap-10 justify-between '>
             <ul className='my-5 '>
                 <p className='opacity-70 py-3'>Company</p>
                 <li className='py-2'>About us</li>
@@ -54,7 +54,7 @@ export default function Footer() {
             </ul>
         </div>
     </div>
-    <div className='sm:flex  mb-3 mt-[1.5em] bg-[#54E3EA] items-center justify-center md:justify-between p-2 rounded-md'>
+    <div className=' text-center sm:flex  mb-3 mt-[1.5em] bg-[#54E3EA] items-center justify-center md:justify-between p-2 rounded-md'>
         <p className=' text-[0.8rem] font-bold py-1 sm:py-5'>© 2024 Footprint Mentorship. All rights reserved.</p>
         <img src={logo} alt='logo' className='hidden md:block w-[130px]'/>
     </div>
