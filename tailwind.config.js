@@ -13,6 +13,9 @@ export default {
         purple:'#482D49',
         lightPurple:'#695769',
         gray:'#BDBBBE'
+      },
+      fontFamily:{
+        platypi: ['Platypi', 'sans-serif']
       }
     },
   },

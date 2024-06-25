@@ -13,18 +13,18 @@ import upicon from '../assets/arrow-up-right.svg'
 
 export default function AboutUs() {
   return (
-    <div className='sm:px-[3.5em] my-[5em] w-[90%] mx-auto'>
+    <div className='my-[2.5em] w-[100%] mx-auto'>
         <div className='w-fit'>
-        <h2 className='text-[2rem] sm:text-[3rem] font-serif font-[600] relative'>About Us
+        <h2 className='text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-platypi font-[600] relative'>About Us
            <img src={line} alt='line-image' className=' absolute -bottom-1 -z-10'/>
         </h2>
         </div>
         
-        <div className='my-8 w-[90%] md:w-full flex-col-reverse md:flex-row flex justify-between'>
-            <div className=' bg-white  md:basis-[68%] h-fit p-3 rounded-lg shadow-md drop-shadow-md'>
+        <div className='my-8 w-full gap-1 flex-col-reverse md:flex-row flex '>
+            <div className=' bg-white lg:pl-7  md:w-[60%] h-fit p-3 rounded-lg shadow-md drop-shadow-md'>
                 <div className='flex justify-between'>
-                    <h3 className=' text-[1.5rem] md:text-[2rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
-                    <div className='bg-yellow rounded-full h-[40px] w-[40px]'>
+                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
+                    <div className='bg-yellow rounded-full h-[30px] w-[30px] flex justify-center'>
                         <img src={arrow} className='w-[20px] m-2'/>
                     </div>
                 </div>
@@ -35,27 +35,40 @@ export default function AboutUs() {
                 </p>
             </div>
 
-            <div className=' md:h-[9em] md:my-10 lg:my-1  md:basis-[40%] lg:basis-[30%] gap-x-1 grid grid-cols-2 grid-flow-dense gap-y-2 p-2 '>
-                <img src={frame1} alt='photo' className=' object-cover'/>
-                <img src={frame2} alt='photo' className='object-cover'/>
-                <img src={frame6} alt='photo' className=' rounded-xl object-cover'/>
-                <img src={frame3} alt='photo' className=' object-cover'/>
+            <div className=' md:w-[40%] lg:w-[30%] grid gap-2   p-2 '>
+                <div className='flex  gap-2'>
+                    <img src={frame1} alt='photo' className=' w-[50%] rounded-xl object-cover'/>
+                    <img src={frame2} alt='photo' className='w-[50%] rounded-xl object-cover'/>
+                </div>
+
+                <div className='flex  gap-2'>
+                <img src={frame6} alt='photo' className=' w-[50%] rounded-xl object-cover'/>
+                <img src={frame3} alt='photo' className='w-[50%] rounded-xl  object-cover'/>
+                </div>
+                
+                
             </div>
 
         </div>
 
-        <div className='my-8 w-[90%] md:w-full md:flex justify-between'>
-        <div className='md:h-[9em] md:my-10 lg:my-1 md:basis-[40%] lg:basis-[30%] grid grid-cols-2 grid-flow-dense gap-y-2 gap-x-2 p-2 '>
-                <img src={frame4} alt='photo' className=' rounded-xl object-cover'/>
-                <img src={frame5} alt='photo' className=' rounded-xl object-cover'/>
-                <img src={frame7} alt='photo' className=' rounded-xl object-cover'/>
-                <img src={frame8} alt='photo' className='rounded-xl object-cover'/>
+        <div className='my-7 w-full md:flex gap-3'>
+            <div className=' md:w-[40%] lg:w-[30%] grid gap-2 p-2 '>
+                <div className='flex  gap-2'>
+                    <img src={frame4} alt='photo' className='w-[50%] rounded-xl object-cover'/>
+                    <img src={frame5} alt='photo' className='w-[50%]   rounded-xl   object-cover'/>
+                </div>
+
+                <div className='flex  gap-2'>
+                    <img src={frame7} alt='photo' className='w-[50%] rounded-xl object-cover'/>
+                    <img src={frame8} alt='photo' className='w-[50%] rounded-xl object-cover'/>
+                </div>
+                 
             </div>
 
-            <div className=' bg-white basis-[68%] h-fit p-3 rounded-lg shadow-md drop-shadow-md'>
+            <div className=' bg-white  md:w-[60%] h-fit p-3 lg:pl-7 rounded-lg shadow-md drop-shadow-md'>
                 <div className='flex justify-between'>
-                    <h3 className=' text-[1.5rem] md:text-[2rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
-                    <div className='bg-yellow rounded-full h-[40px] w-[40px]'>
+                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
+                    <div className='bg-yellow rounded-full h-[30px] flex justify-center w-[30px]'>
                         <img src={arrow} className='w-[20px] m-2'/>
                     </div>
                 </div>
@@ -67,15 +80,15 @@ export default function AboutUs() {
 
         </div>
         
-        <div className=' font-serif my-[5em]'>
+        <div className=' font-platypi my-[5em]'>
         <div className='w-fit mx-auto my-5'>
-            <h2 className='text-[2rem] sm:text-[3rem] font-serif font-[600] relative'>Services
+            <h2 className='text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-[600] relative'>Our Services
                 <img src={line2} alt='line-image' className=' absolute bottom-1 -z-10'/>
             </h2>
         </div>
 
         <div className=' mx-auto'>
-            <div className='flex justify-center gap-3 md:gap-5 lg:px-10'>
+            <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                 <div className=' w-fit bg-yellow  my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
                     <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Mentorship</h3>
                     <div className='bg-black w-[20px] h-[20px] rounded-full'>

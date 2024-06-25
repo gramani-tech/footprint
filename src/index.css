@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   @font-face {
     font-family: 'Author';
     font-style: normal;
-    font-weight: 400;
-    src: url('/src/assets/font/Author-BF64f7329d7346e.otf') format('otf');
+    font-weight: 500;
+    src: url(/src//assets/font/Author-BF64f7329d7346e.otf) format('otf');
   }
 
   body{
-    font-family: 'Author';
+   
     background-color: #FAF7F5;
+    font-weight: 500;
   }
 }

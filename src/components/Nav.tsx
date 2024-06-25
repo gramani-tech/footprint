@@ -1,19 +1,26 @@
 import logo from '../assets/logo png 1.svg'
-import menu from '../assets/menu-icon.png'
-import close from '../assets/close.png'
+import {
+    Bars3Icon,
+  } from '@heroicons/react/24/outline'
+
 import { useState } from 'react'
+import MobileNav from './mobile'
 
 export default function Nav() {
 
     const [open, setOpen] = useState(false)
   return (
-    <div className={`  bg-white flex justify-between py-1 md:py-3 text-[1rem] px-[1.5rem] md:px-[3.5em]`}>  
+    <div className={`  bg-white flex justify-between py-5 md:py-2  h-[5em] text-[1rem] px-[2.5rem] lg:px-[6em]`}>  
+          {
+            open && <MobileNav setOpen={setOpen} open={open}/>
+        }
+        
         <div>
-            <img src={logo} alt='logo' className=' object-cover w-[90px]'/>
+            <img src={logo} alt='logo' className=' object-cover w-[120px] md:w-[170px]'/>
         </div>
         
-        <ul className={`${open? 'absolute md:static w-[50%] sm:w-[40%] text-[1.1rem] md:text-[1rem] md:w-fit  px-10 md:px-0 py-3 md:py-0 grid gap-2 z-50 h-full transition-all bg-white md:bg-none left-0':'hidden transition-all'}   md:flex gap-7`}>
-            <img src={close} className='block md:hidden w-[30px] cursor-pointer ml-auto' onClick={()=>setOpen(false)}/>
+        <ul className={`text-[1.1rem] md:text-[1rem] py-5 hidden lg:flex gap-7`}>
+            {/* <img src={close} className='block md:hidden w-[30px] cursor-pointer ml-auto' onClick={()=>setOpen(false)}/> */}
             <li className='font-bold'>Home</li>
             <li>About Us</li>
             <li>Talents</li>
@@ -21,9 +28,20 @@ export default function Nav() {
             <li>Policy</li>
         </ul>
 
-        <button className=' px-2 bg-yellow border-0 p-1 font-bold '>Get Started</button>
+        <button className=' px-3 hidden lg:block bg-yellow border-0 py-2 md:my-2 font-bold '>Get Started</button>
 
-        <img src={menu} alt='menu-icon' className='w-[30px] h-[30px] md:hidden cursor-pointer' onClick={()=>setOpen(true)}/>
+        <div className="  lg:hidden">
+                    <button
+                      type="button"
+                      className="-ml-2 rounded-md bg-white p-2 text-gray-400"
+                      onClick={() => setOpen(true)}
+                    >
+                      <span className="sr-only">Open menu</span>
+                      <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                    </button>
+        </div>
+
+      
     </div>
   )
 }
