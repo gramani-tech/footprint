@@ -23,13 +23,13 @@ export default function AboutUs() {
         <div className='my-8 w-full gap-1 flex-col-reverse md:flex-row flex '>
             <div className=' bg-white lg:pl-7  md:w-[60%] h-fit p-3 rounded-lg shadow-md drop-shadow-md'>
                 <div className='flex justify-between'>
-                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
+                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-bold  '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
                     <div className='bg-yellow rounded-full h-[30px] w-[30px] flex justify-center'>
                         <img src={arrow} className='w-[20px] m-2'/>
                     </div>
                 </div>
                 
-                <p className='my-5 text-[0.9rem]'>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae amet dui eget erat. 
+                <p className='my-5 text-[1rem]'>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae amet dui eget erat. 
                     Porttitor molestie malesuada semper vestibulum et. Viverra pulvinar aliquam libero sed at quis vitae lectus arcu. 
                     Viverra magna a nec aliquet. Cras pharetra vel sed sit scelerisque semper. Cras tortor et tellus lobortis risus.
                 </p>
@@ -67,13 +67,13 @@ export default function AboutUs() {
 
             <div className=' bg-white  md:w-[60%] h-fit p-3 lg:pl-7 rounded-lg shadow-md drop-shadow-md'>
                 <div className='flex justify-between'>
-                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-[550] '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
+                    <h3 className=' text-[1.5rem] md:text-[1.7rem] font-bold '>Lorem ipsum dolor <span className='block leading-4'>sit amet</span></h3>
                     <div className='bg-yellow rounded-full h-[30px] flex justify-center w-[30px]'>
                         <img src={arrow} className='w-[20px] m-2'/>
                     </div>
                 </div>
                 
-                <p className='my-5 text-[0.9rem]'>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae amet dui eget erat. Porttitor molestie malesuada semper vestibulum et. Viverra pulvinar aliquam libero sed at quis vitae lectus arcu. Viverra magna a nec aliquet. Cras pharetra vel sed sit scelerisque</p>
+                <p className='my-5 text-[1rem]'>Lorem ipsum dolor sit amet consectetur. Pellentesque vitae amet dui eget erat. Porttitor molestie malesuada semper vestibulum et. Viverra pulvinar aliquam libero sed at quis vitae lectus arcu. Viverra magna a nec aliquet. Cras pharetra vel sed sit scelerisque</p>
             </div>
 
             

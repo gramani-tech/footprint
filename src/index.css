@@ -10,12 +10,28 @@
     font-family: 'Author';
     font-style: normal;
     font-weight: 500;
-    src: url(/src//assets/font/Author-BF64f7329d7346e.otf) format('otf');
+    src: url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Medium.woff2') format('woff2'),
+       url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Medium.woff') format('woff'),
+       url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Medium.ttf') format('truetype');
+    font-display: swap;
+ 
+  }
+
+  @font-face {
+    font-family: 'Author-bold';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Semibold.woff2') format('woff2'),
+       url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Semibold.woff') format('woff'),
+       url('/src/assets/font/Author_Complete/Fonts/WEB/fonts/Author-Semibold.ttf') format('truetype');
+    font-display: swap;
+ 
   }
 
   body{
    font-family: 'Author';
     background-color: #FAF7F5;
     font-weight: 500;
+ 
   }
 }
