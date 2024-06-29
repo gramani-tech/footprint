@@ -5,6 +5,7 @@ import Section3 from "./components/section3"
 import Waitlist from "./components/Waitlist"
 import Footer from "./components/Footer"
 import MobileNav from "./components/mobilenav"
+import PricingPage from "./components/PricingPage"
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <div className="px-[2.5em] sm:px-[7em]">
         <SectionOne/>
         <AboutUs/>
+        <PricingPage/>
         <Section3/>
         <Waitlist/>
         <Footer/>
