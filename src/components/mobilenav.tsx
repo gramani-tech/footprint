@@ -8,7 +8,7 @@ import {
  
 } from '@headlessui/react'
 import {
-  Bars3Icon, 
+  // Bars3Icon, 
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
