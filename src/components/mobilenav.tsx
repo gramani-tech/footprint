@@ -5,7 +5,7 @@ import {
   Dialog,
   DialogBackdrop,
   DialogPanel,
- 
+
 } from '@headlessui/react'
 import {
   // Bars3Icon, 
@@ -13,7 +13,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 
-export default function MobileNav() {
+export default function MobileNav({ setIsOpen }: { setIsOpen: (open: boolean) => void }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -42,17 +42,17 @@ export default function MobileNav() {
             </div>
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6 font-platypi">
-             
-            <h2>Home</h2>
-             <h2>About Us</h2>
-            <h2>Talents</h2>
-            <h2>Contact Us</h2>
-            <h2>Policy</h2>
+
+              <h2>Home</h2>
+              <h2>About Us</h2>
+              <h2>Talents</h2>
+              <h2>Contact Us</h2>
+              <h2>Policy</h2>
             </div>
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6 font-platypi">
               <div className="flow-root">
-              <button className=' px-3  bg-yellow border-0 py-2 md:my-2 font-bold '>Get Started</button>
+                <button className=' px-3  bg-yellow border-0 py-2 md:my-2 font-bold ' onClick={() => setIsOpen(true)}>Get Started</button>
               </div>
             </div>
 
@@ -69,13 +69,13 @@ export default function MobileNav() {
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="flex  items-center">
-                      <span className="sr-only">Your Company</span>
-                      <img
-                        className=" w-[150px]"
-                        src={logo}
-                        alt=""
-                      />
-                   
+                    <span className="sr-only">Your Company</span>
+                    <img
+                      className=" w-[150px]"
+                      src={logo}
+                      alt=""
+                    />
+
                   </div>
 
                   {/* <ul className={`text-[1.1rem] md:text-[1rem] py-5 hidden lg:flex gap-10`}>
@@ -86,7 +86,7 @@ export default function MobileNav() {
                     <li>Policy</li>
                 </ul> */}
 
-                <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]'>Get Started</button>
+                  <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]'>Get Started</button>
                   {/* Mobile menu (lg-) */}
                   {/* <div className="flex flex-1 items-center lg:hidden">
                     <button
