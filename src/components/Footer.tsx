@@ -13,7 +13,7 @@ export default function Footer() {
             {/* <p className='py-3 opacity-70'>Lorem ipsum dolor sit amet consectetur. Sagittis egestas erat tortor donec suspendisse pretium tellus egestas arcu.</p> */}
             
             <div className='flex justify-center md:justify-start gap-10 md:gap-5 my-3  '>
-                <div className='bg-black rounded-full  w-[23px] h-[23px] p-1  flex justify-center'>
+                {/* <div className='bg-black rounded-full  w-[23px] h-[23px] p-1  flex justify-center'>
                     <img src={facebook} alt='facebook-icon' />
                 </div>
 
@@ -22,10 +22,10 @@ export default function Footer() {
                 </div>
                 <div className='bg-black rounded-full  w-[23px] h-[23px] p-1  flex justify-center'>
                     <img src={instagram} alt='instagram-icon' />
-                </div>
-                <div className='bg-black rounded-full w-[23px] h-[23px] p-1  flex justify-center'>
+                </div> */}
+                <a href="https://www.linkedin.com/company/footprint-mentorship/" className='bg-black rounded-full w-[23px] h-[23px] p-1  flex justify-center'>
                     <img src={linkedin} alt='linkedin-icon' className=''/>
-                </div>
+                </a>
             </div>
         </div>
         
