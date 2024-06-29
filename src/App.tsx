@@ -18,7 +18,7 @@ function App() {
       {/* <Nav/> */}
       <MobileNav/>
    
-      <div className="px-[2.5em] sm:px-[7em]">
+      <div className="px-[1em] md:px-[7em]">
         <SectionOne/>
         <AboutUs/>
         <PricingPage/>
