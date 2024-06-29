@@ -97,8 +97,8 @@ const PricingPage = () => {
             <img src={line} alt='line-image' className=' absolute bottom-[-25px] -z-10' />
           </h2>
         </div>
-        <div className="flex border w-[100%] md:w-[400px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
-          <button onClick={() => setSelectedPackage("experience")} className={`${selectedPackage === "experience" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Experiencce</button>
+        <div className="flex border w-[100%] border-gray rounded-[6px] md:w-[400px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
+          <button onClick={() => setSelectedPackage("experience")} className={`${selectedPackage === "experience" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Experience</button>
           <button onClick={() => setSelectedPackage("internship")} className={`${selectedPackage === "internship" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Internship</button>
           <button onClick={() => setSelectedPackage("free")} className={`${selectedPackage === "free" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Free</button>
         </div>
