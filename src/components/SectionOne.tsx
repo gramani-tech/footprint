@@ -4,9 +4,9 @@ import { ReactTyped } from "react-typed";
 export default function SectionOne() {
   const textArr = ["streamline your job search process.", "track and improve your interview performance.", "enhance your job  success rates.", "reduce the time it takes you to secure a new role."]
   return (
-    <div className=' my-7 pt-10'>
+    <div className=' my-2 md:my-7 md:pt-10'>
       <div className='text-center mt-4'>
-        <h2 className=' font-platypi text-[1.5rem] md:text-[2.5rem] lg:text-[3rem] font-[700] leading-[1.1em]  max-w-[700px] mx-auto text-yellow h-[150px] mt-4'> We <span className='text-black'><ReactTyped loop strings={textArr} typeSpeed={100} backSpeed={50} backDelay={8800} />  </span>
+        <h2 className=' font-platypi text-[1.5rem] md:text-[2.5rem] lg:text-[3rem] font-[700] leading-[1.1em]  max-w-[700px] mx-auto text-yellow h-[80px] md:h-[150px] mt-4'> We <span className='text-black'><ReactTyped loop strings={textArr} typeSpeed={100} backSpeed={50} backDelay={8800} />  </span>
           {/* track and improve your interview performance, enhance job your success rates, and reduce the time it takes to secure a new role  */}
         </h2>
 
