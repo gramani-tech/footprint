@@ -1,7 +1,7 @@
 import image from '../assets/Auto Layout Vertical.jpg'
 import { ReactTyped } from "react-typed";
 
-export default function SectionOne() {
+export default function SectionOne({ setIsOpen }: { setIsOpen: (open: boolean) => void }) {
   const textArr = ["streamline your job search process.", "track and improve your interview performance.", "enhance your job  success rates.", "reduce the time it takes you to secure a new role."]
   return (
     <div className=' my-2 md:my-7 md:pt-10'>
@@ -11,7 +11,7 @@ export default function SectionOne() {
         </h2>
 
         {/* <p className='py-2'>Be the first to know when we officially launch.</p> */}
-        <button className=' m-2 bg-yellow p-2 font-bold mt-7 rounded-[6px] text-black'>Get Started</button>
+        <button className=' m-2 bg-yellow p-2 font-bold mt-7 rounded-[6px] text-black' onClick={() => setIsOpen(true)}>Get Started</button>
       </div>
 
       <div className=' w-[100%] mx-auto mt-4'>
