@@ -12,25 +12,25 @@ import RegistrationForm from "./components/RegistrationForm"
 
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className=" text-text">
       {/* <div className="bg-yellow p-2 text-center font-bold"><h2>200 days to launch! <span className=" pl-3 text-[1.2rem]">Support us</span></h2></div> */}
       {/* <Nav/> */}
-      <MobileNav setIsOpen={setIsOpen}/>
-   
+      <MobileNav setIsOpen={setIsOpen} />
+
       <div className="px-[1em] md:px-[7em]">
-        <SectionOne setIsOpen={setIsOpen}/>
-        <AboutUs/>
-        <PricingPage/>
-        <Section3/>
-        <Waitlist/>
-        {isOpen&&<RegistrationForm isOpen={isOpen} setIsOpen={setIsOpen}/>}
-        <Footer/>
-       
+        <SectionOne setIsOpen={setIsOpen} />
+        <AboutUs />
+        <PricingPage />
+        <Section3 />
+        <Waitlist />
+        {isOpen && <RegistrationForm isOpen={isOpen} setIsOpen={setIsOpen} />}
+        <Footer />
+
       </div>
-      
+
     </div>
   )
 }

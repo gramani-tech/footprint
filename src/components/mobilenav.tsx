@@ -86,7 +86,7 @@ export default function MobileNav({ setIsOpen }: { setIsOpen: (open: boolean) =>
                     <li>Policy</li>
                 </ul> */}
 
-                  <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]'>Get Started</button>
+                  <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]' onClick={() => setIsOpen(true)}>Get Started</button>
                   {/* Mobile menu (lg-) */}
                   {/* <div className="flex flex-1 items-center lg:hidden">
                     <button
