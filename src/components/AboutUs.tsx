@@ -78,7 +78,7 @@ export default function AboutUs() {
 
             </div>
 
-            <div className=' font-platypi   my-[200px]'>
+            <div className=' font-platypi   lg:my-[200px]'>
                 <div className='w-fit mx-auto my-5'>
                     <h2 className='text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-[600] relative'>Our Services
                         <img src={line2} alt='line-image' className=' absolute bottom-1 -z-10' />
@@ -130,6 +130,27 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
+                    <div className='w-full flex justify-center gap-3 md:gap-5 lg:px-10'>
+                    <div className=' bg-white my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
+                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Personalise Mentorship</h3>
+                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                        </div>
+                    </div>
+
+                    <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
+                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation opportunity</h3>
+                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                        </div>
+                    </div>
+                    <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
+                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Resume Review</h3>
+                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                        </div>
+                    </div>
+                </div>
                     <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                         <div className=' w-fit bg-yellow  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
                             <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Mock interview</h3>
@@ -154,6 +175,7 @@ export default function AboutUs() {
                 </div>
 
             </div>
+            
 
         </div>
     )
