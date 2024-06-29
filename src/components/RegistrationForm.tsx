@@ -16,7 +16,7 @@ const RegistrationForm = ({ isOpen, setIsOpen }: any) => {
       <div className="fixed inset-0 z-40 flex items-center justify-center">
         <DialogPanel
           transition
-          className="relative w-full h-[90vh] lg:h-[700px] overflow-scroll max-w-2xl transform  rounded-lg bg-yellow p-6 shadow-xl transition-all"
+          className="relative lg:w-full w-[90vw] h-[90vh] lg:h-[700px] overflow-scroll max-w-2xl transform  rounded-lg bg-yellow p-6 shadow-xl transition-all"
         >
           <div className="flex justify-end">
             <button
