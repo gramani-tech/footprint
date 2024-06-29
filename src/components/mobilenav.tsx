@@ -64,11 +64,11 @@ export default function MobileNav() {
         <nav aria-label="Top">
 
           <div className="bg-white">
-            <div className="mx-auto max-w-7xl px-[2.5em] sm:px-[6em]">
+            <div className="mx-auto max-w-7xl md:px-[2.5em] px-[10px] sm:px-[6em]">
               <div className="">
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
-                  <div className="hidden lg:flex  lg:items-center">
+                  <div className="flex  items-center">
                       <span className="sr-only">Your Company</span>
                       <img
                         className=" w-[150px]"
@@ -78,17 +78,17 @@ export default function MobileNav() {
                    
                   </div>
 
-                  <ul className={`text-[1.1rem] md:text-[1rem] py-5 hidden lg:flex gap-10`}>
+                  {/* <ul className={`text-[1.1rem] md:text-[1rem] py-5 hidden lg:flex gap-10`}>
                     <li className='font-bold'>Home</li>
                     <li>About Us</li>
                     <li>Talents</li>
                     <li>Contact Us</li>
                     <li>Policy</li>
-                </ul>
+                </ul> */}
 
-                <button className=' px-3 hidden lg:block bg-yellow border-0 py-2 md:my-2 font-bold '>Get Started</button>
+                <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]'>Get Started</button>
                   {/* Mobile menu (lg-) */}
-                  <div className="flex flex-1 items-center lg:hidden">
+                  {/* <div className="flex flex-1 items-center lg:hidden">
                     <button
                       type="button"
                       className="-ml-2 rounded-md bg-white p-2 text-gray-400"
@@ -97,17 +97,17 @@ export default function MobileNav() {
                       <span className="sr-only">Open menu</span>
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
-                  </div>
+                  </div> */}
 
                   {/* Logo (lg-) */}
-                  <a href="#" className="lg:hidden">
+                  {/* <a href="#" className="lg:hidden">
                     <span className="sr-only">Your Company</span>
                     <img
                       src={logo}
                       alt=""
                       className=" w-[8em]"
                     />
-                  </a>
+                  </a> */}
 
                 </div>
               </div>
