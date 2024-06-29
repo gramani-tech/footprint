@@ -91,13 +91,13 @@ const PricingPage = () => {
 
   return (
     <div className="py-12">
-      <div className=' font-platypi   mb-10'>
+      <div className=' font-platypi mb-10'>
         <div className='w-fit mx-auto my-5'>
           <h2 className='text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-[600] relative'>Our Pricing Plans
             <img src={line} alt='line-image' className=' absolute bottom-[-25px] -z-10' />
           </h2>
         </div>
-        <div className="flex border w-[400px] mx-auto mt-10 px-5 py-2 justify-between">
+        <div className="flex border w-[100%] md:w-[400px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
           <button onClick={() => setSelectedPackage("experience")} className={`${selectedPackage === "experience" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Experiencce</button>
           <button onClick={() => setSelectedPackage("internship")} className={`${selectedPackage === "internship" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Internship</button>
           <button onClick={() => setSelectedPackage("free")} className={`${selectedPackage === "free" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Free</button>

@@ -130,7 +130,7 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full flex justify-center gap-3 md:gap-5 lg:px-10'>
+                    <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                     <div className=' bg-white my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
                         <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Personalise Mentorship</h3>
                         <div className='bg-black w-[20px] h-[20px] rounded-full'>
