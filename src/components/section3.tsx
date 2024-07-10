@@ -8,7 +8,7 @@ export default function Section3() {
     const faqs = [
         {
             title: 'What is Footprint Mentorship?',
-            content: 'Footprint Mentorship is a personalized, paid mentorship program designed to help tech professionals secure new job roles faster by providing comprehensive support throughout the job application process.'
+            content: 'Footprint Mentorship is a personalized, paid mentorship program designed to help tech professionals secure new job roles faster by providing comprehensive support throughout the job hunting process.'
         },
         {
             title: 'Who can join Footprint Mentorship?',
@@ -67,7 +67,7 @@ export default function Section3() {
                 </div>
 
                 <div className='p-1 text-[1rem] relative grid sm:grid-cols-2 gap-5 bg-gradient-to-t from-[#210124D1] to-[#00000000] rounded-xl py-[3em]'>
-                    <div className='bg-white p-4 rounded-2xl shadow-md '>
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray '>
                         <div className='flex gap-1 item-center my-2'>
                             <img src="https://media.licdn.com/dms/image/D5603AQG91Kz3vvM-MQ/profile-displayphoto-shrink_400_400/0/1678467075459?e=1726099200&v=beta&t=es_SLhG2B0wsWI-_9zBuekG-34PYZm-NMoeH0BsU3D4" alt='avatar' className=' object-cover w-[30px] rounded-full' />
                             <h3 className='font-bold text-[1.1rem]'>Joy Ajiboye</h3>
@@ -77,7 +77,7 @@ export default function Section3() {
                         </p>
                     </div>
 
-                    <div className='bg-white p-4 rounded-2xl shadow-md '>
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray '>
                         <div className='flex gap-1 item-center my-2'>
                             <img src='https://media.licdn.com/dms/image/D4D03AQEA5eyoxO0Ang/profile-displayphoto-shrink_400_400/0/1715068900949?e=1726099200&v=beta&t=nimxhcsBB91YNr9QNcGtFLO-cqdirv1eMZBLgRFUpmk' alt='avatar' className=' object-cover w-[30px] rounded-full' />
                             <h3 className='font-bold text-[1.1rem]'>Emmanuel Chidera</h3>
@@ -88,7 +88,7 @@ export default function Section3() {
                         </p>
                     </div>
 
-                    <div className=' opacity-40 bg-gray p-4 rounded-t-xl  '>
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray  '>
                         <div className='flex gap-1 item-center my-2'>
                             <img src="https://media.licdn.com/dms/image/D4D03AQH0sEiOOVbhsQ/profile-displayphoto-shrink_400_400/0/1709816186435?e=1726099200&v=beta&t=JQnWiVn5o2BORiyGuKgeEpNaJGql0zxNUiGbx90v6XY" alt='avatar' className=' object-cover w-[30px] rounded-full' />
                             <h3 className='font-bold text-[1.1rem]'>Grace Effiong</h3>
@@ -98,7 +98,7 @@ export default function Section3() {
                         </p>
                     </div>
 
-                    <div className=' opacity-40 bg-gray p-4 rounded-t-xl'>
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray'>
                         <div className='flex gap-1 item-center my-2'>
                             <img src={avatar} alt='avatar' className=' object-cover w-[30px] rounded-full' />
                             <h3 className='font-bold text-[1.1rem]'>Lorem</h3>

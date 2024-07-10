@@ -145,7 +145,7 @@ export default function AboutUs() {
                         </div>
 
                         <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center shadow-lg'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Vibrant Tech Community</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Vibrant job hunting ommunity</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
@@ -157,27 +157,27 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
+                    <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                         <div className=' w-fit bg-yellow  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Mock interview</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Accountability support</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
 
                         <div className='bg-yellow w-fit  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation opportunity</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Scrum team</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
                         <div className='bg-yellow w-fit  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Resume Review</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Career development</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
 
             </div>

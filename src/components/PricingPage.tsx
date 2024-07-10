@@ -1,11 +1,16 @@
 import { useState } from 'react';
 import line from '../assets/Line 1.svg'
 
+const currencySymbols = {
+  naira: '₦',
+  dollar: '$'
+};
 const packages = [
   {
     title: "COMPLIMENTARY",
     type: "free",
-    price: "Free",
+    priceNaira: "Free",
+    priceDollar: "Free",
     features: [
       // "30 minutes free session with a mentor",
       "Join a Tech Community",
@@ -16,7 +21,8 @@ const packages = [
   {
     title: "SILVER PACKAGE",
     type: "experience",
-    price: "50,000",
+    priceNaira: "50,000",
+    priceDollar: "39",
     duration: "1 month DURATION (access to a mentor)",
     features: [
       "Job application guidance",
@@ -31,7 +37,8 @@ const packages = [
   {
     title: "DIAMOND PACKAGE",
     type: "experience",
-    price: "140,000",
+    priceNaira: "140,000",
+    priceDollar: "99",
     duration: "3 month DURATION (access to a mentor)",
     features: [
       "Job application guidance",
@@ -49,7 +56,8 @@ const packages = [
   {
     title: "GOLD PACKAGE",
     type: "experience",
-    price: "80,000 with 10% of 3 months salary",
+    priceNaira: "80,000 with 10% of 3 months salary",
+    priceDollar: "69 with 10% of 3 months salary",
     duration: "Premium (till mentee land a Job)",
     features: [
       "Job application guidance",
@@ -87,8 +95,12 @@ const packages = [
   }
 ];
 
+
+
+
 const PricingPage = () => {
   const [selectedPackage, setSelectedPackage] = useState('experience');
+  const [priceIn, setPriceIn] = useState('naira');
 
   const filterPackages = packages.filter((item) => item.type === selectedPackage);
 
@@ -106,6 +118,12 @@ const PricingPage = () => {
           <button onClick={() => setSelectedPackage("free")} className={`${selectedPackage === "free" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Free</button>
         </div>
 
+        <div className="flex  w-[100%] bg-[#54E3EA] rounded-[6px] md:w-[300px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
+          <button onClick={() => setPriceIn("naira")} className={`${priceIn === "naira" ? "bg-yellow " : " bg-gray"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Naira (NGN)</button>
+          <button onClick={() => setPriceIn("dollar")} className={`${priceIn === "dollar" ? "bg-yellow " : "bg-gray"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Dollar (USD)</button>
+
+        </div>
+
       </div>
       <div className="container mx-auto px-4">
         {/* <h1 className="text-4xl font-bold text-center mb-12">Our Pricing Plans</h1> */}
@@ -113,7 +131,7 @@ const PricingPage = () => {
           {filterPackages.map((pkg, index) => (
             <div key={index} className="bg-white text-black p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">{pkg.title}</h2>
-              <p className="text-xl font-semibold mb-4">{pkg.price}</p>
+              <p className="text-xl font-semibold mb-4">{currencySymbols[priceIn]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</p>
               {pkg.duration && <p className="text-md font-medium mb-4">{pkg.duration}</p>}
               <ul className="list-disc list-inside">
                 {pkg.features.map((feature, idx) => (
