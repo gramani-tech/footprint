@@ -131,7 +131,7 @@ const PricingPage = () => {
           {filterPackages.map((pkg, index) => (
             <div key={index} className="bg-white text-black p-6 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold mb-4">{pkg.title}</h2>
-              <p className="text-xl font-semibold mb-4">{currencySymbols[priceIn]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</p>
+              <p className="text-xl font-semibold mb-4">{currencySymbols[priceIn as keyof typeof currencySymbols]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</p>
               {pkg.duration && <p className="text-md font-medium mb-4">{pkg.duration}</p>}
               <ul className="list-disc list-inside">
                 {pkg.features.map((feature, idx) => (
