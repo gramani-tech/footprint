@@ -11,7 +11,7 @@ export default function SectionOne({ setIsOpen }: { setIsOpen: (open: boolean) =
         </h2>
 
         {/* <p className='py-2'>Be the first to know when we officially launch.</p> */}
-        <button className=' m-2 bg-yellow p-2 font-bold mt-7 rounded-[6px] text-black' onClick={() => setIsOpen(true)}>Get Started</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenI_CH67M-eVggZd0jTGX115J2zCh3gjp544quW8orf33JeQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer"> <button className=' m-2 bg-yellow p-2 px-4 font-bold mt-7 text-[24px] rounded-[6px] text-black opacity-100'>Join Now</button></a>
       </div>
 
       <div className=' w-[100%] mx-auto mt-4'>

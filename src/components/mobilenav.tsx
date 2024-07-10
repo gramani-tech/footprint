@@ -52,7 +52,7 @@ export default function MobileNav({ setIsOpen }: { setIsOpen: (open: boolean) =>
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6 font-platypi">
               <div className="flow-root">
-                <button className=' px-3  bg-yellow border-0 py-2 md:my-2 font-bold ' onClick={() => setIsOpen(true)}>Get Started</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSenI_CH67M-eVggZd0jTGX115J2zCh3gjp544quW8orf33JeQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer"><button className=' px-3  bg-yellow border-0 py-2 md:my-2 font-bold ' >Join Now</button></a>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export default function MobileNav({ setIsOpen }: { setIsOpen: (open: boolean) =>
                     <li>Policy</li>
                 </ul> */}
 
-                  <button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]' onClick={() => setIsOpen(true)}>Get Started</button>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSenI_CH67M-eVggZd0jTGX115J2zCh3gjp544quW8orf33JeQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer"><button className=' px-3  bg-yellow border-0 py-2 my-2 font-bold  rounded-[6px]' >Join Now</button></a>
                   {/* Mobile menu (lg-) */}
                   {/* <div className="flex flex-1 items-center lg:hidden">
                     <button
