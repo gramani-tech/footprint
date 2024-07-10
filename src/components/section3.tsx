@@ -1,7 +1,6 @@
 import line1 from '../assets/Line 1.svg'
 import line2 from '../assets/Line2.svg'
 import avatar from '../assets/Avatar.jpg'
-import upicon from '../assets/arrow-up-right.svg'
 
 
 export default function Section3() {
@@ -131,6 +130,7 @@ export default function Section3() {
                         ))
                     }
                 </div>
+
             </div>
 
 
