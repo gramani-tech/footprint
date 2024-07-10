@@ -8,7 +8,7 @@ export default function Section3() {
     const faqs = [
         {
             title: 'What is Footprint Mentorship?',
-            content: 'Footprint Mentorship is a personalized, paid mentorship program designed to help tech professionals secure new job roles faster by providing comprehensive support throughout the job application process.'
+            content: 'Footprint Mentorship is a personalized, paid mentorship program designed to help tech professionals secure new job roles faster by providing comprehensive support throughout the job hunting process.'
         },
         {
             title: 'Who can join Footprint Mentorship?',
@@ -18,7 +18,7 @@ export default function Section3() {
             title: 'How does Footprint Mentorship work?',
             content: 'Footprint Mentorship offers personalized one-on-one coaching, structured job application guidance, detailed feedback mechanisms, and access to a supportive community. Mentees receive tailored advice and resources to enhance their job search strategy and improve their chances of securing a job offer.'
         },
-        
+
         {
             title: 'How much does Footprint Mentorship cost?',
             content: 'We offer various pricing packages to cater to different needs and budgets: check out our pricing page for more information. We also offer a free trial package for those who want to experience our services before committing to a paid plan.'
@@ -27,8 +27,8 @@ export default function Section3() {
             title: 'How do I get started with Footprint Mentorship?',
             content: 'To get started, simply visit our website and sign up for the package that best suits your needs. After signing up, you will be send  a welcome email.'
         },
-     
-     
+
+
         {
             title: 'How do you ensure the quality of your mentorship program?',
             content: 'We continuously monitor and evaluate our mentorship program through feedback from mentees and mentors. We also use data-driven methods to track progress and refine our strategies to ensure the highest quality of service.'
@@ -67,44 +67,51 @@ export default function Section3() {
                 </div>
 
                 <div className='p-1 text-[1rem] relative grid sm:grid-cols-2 gap-5 bg-gradient-to-t from-[#210124D1] to-[#00000000] rounded-xl py-[3em]'>
-                    <div className='bg-white p-4 rounded-2xl shadow-md '>
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray '>
                         <div className='flex gap-1 item-center my-2'>
-                            <img src={avatar} alt='avatar' className=' object-cover w-[30px]' />
+                            <img src="https://media.licdn.com/dms/image/D5603AQG91Kz3vvM-MQ/profile-displayphoto-shrink_400_400/0/1678467075459?e=1726099200&v=beta&t=es_SLhG2B0wsWI-_9zBuekG-34PYZm-NMoeH0BsU3D4" alt='avatar' className=' object-cover w-[30px] rounded-full' />
+                            <h3 className='font-bold text-[1.1rem]'>Joy Ajiboye</h3>
+                        </div>
+                        <p className=''>
+                            The founder of Footprint Mentorship has played a significant role in my career. He worked closely with me to refine my resume, making it stand out to potential employers. His personalized mentorship was invaluable, offering tailored guidance that significantly boosted my confidence and preparedness for interviews. He actively shared job opportunities that opened doors to new possibilities. I highly recommend Footprint Mentorship to anyone seeking to advance their career in tech.
+                        </p>
+                    </div>
+
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray '>
+                        <div className='flex gap-1 item-center my-2'>
+                            <img src='https://media.licdn.com/dms/image/D4D03AQEA5eyoxO0Ang/profile-displayphoto-shrink_400_400/0/1715068900949?e=1726099200&v=beta&t=nimxhcsBB91YNr9QNcGtFLO-cqdirv1eMZBLgRFUpmk' alt='avatar' className=' object-cover w-[30px] rounded-full' />
+                            <h3 className='font-bold text-[1.1rem]'>Emmanuel Chidera</h3>
+                        </div>
+                        <p className=''>My experience with Footprint was truly transformative. I was at a crossroads, unsure whether to learn a new programming language or stick with what I already knew. The Boss of Footprint advised me to focus on gaining work experience instead of learning a new language. This advice became a guiding principle for me, leading to the completion of multiple projects using my existing skills.
+
+                            Footprint provided me with invaluable mentorship and interview preparation. They also revamped my CV, making it exceptional. Since joined Footprint Mentorship, I have secured several job opportunities.
+                        </p>
+                    </div>
+
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray  '>
+                        <div className='flex gap-1 item-center my-2'>
+                            <img src="https://media.licdn.com/dms/image/D4D03AQH0sEiOOVbhsQ/profile-displayphoto-shrink_400_400/0/1709816186435?e=1726099200&v=beta&t=JQnWiVn5o2BORiyGuKgeEpNaJGql0zxNUiGbx90v6XY" alt='avatar' className=' object-cover w-[30px] rounded-full' />
+                            <h3 className='font-bold text-[1.1rem]'>Grace Effiong</h3>
+                        </div>
+                        <p className=''>
+                            Ever wondered what your next step would be? So confused about your career choices? That was me before finding a mentor. Thanks to Footprint mentorship, I've gained clarity and confidence. I now enjoy a stable job and have received several job offers, which I've been able to decline or postpone respectfully. Joining Footprint was truly the best career decision I've made.
+                        </p>
+                    </div>
+
+                    <div className='hover:bg-white  hover:opacity-100 p-4 rounded-2xl shadow-md opacity-40 bg-gray'>
+                        <div className='flex gap-1 item-center my-2'>
+                            <img src={avatar} alt='avatar' className=' object-cover w-[30px] rounded-full' />
                             <h3 className='font-bold text-[1.1rem]'>Lorem</h3>
                         </div>
                         <p className=''>Lorem ipsum dolor sit amet consectetur. Facilisis consequat molestie cras nec lacus turpis lacus egestas diam. Adipiscing turpis lectus adipiscing dolor enim condimentum enim tortor. Tortor.</p>
                     </div>
 
-                    <div className='bg-white p-4 rounded-2xl shadow-md '>
-                        <div className='flex gap-1 item-center my-2'>
-                            <img src={avatar} alt='avatar' className=' object-cover w-[30px]' />
-                            <h3 className='font-bold text-[1.1rem]'>Lorem</h3>
-                        </div>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur. Facilisis consequat molestie cras nec lacus turpis lacus egestas diam. Adipiscing turpis lectus adipiscing dolor enim condimentum enim tortor. Tortor.</p>
-                    </div>
-
-                    <div className=' opacity-40 bg-gray p-4 rounded-t-xl  '>
-                        <div className='flex gap-1 item-center my-2'>
-                            <img src={avatar} alt='avatar' className=' object-cover w-[30px]' />
-                            <h3 className='font-bold text-[1.1rem]'>Lorem</h3>
-                        </div>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur. Facilisis consequat molestie cras nec lacus turpis lacus egestas diam. Adipiscing turpis lectus adipiscing dolor enim condimentum enim tortor. Tortor.</p>
-                    </div>
-
-                    <div className=' opacity-40 bg-gray p-4 rounded-t-xl'>
-                        <div className='flex gap-1 item-center my-2'>
-                            <img src={avatar} alt='avatar' className=' object-cover w-[30px]' />
-                            <h3 className='font-bold text-[1.1rem]'>Lorem</h3>
-                        </div>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur. Facilisis consequat molestie cras nec lacus turpis lacus egestas diam. Adipiscing turpis lectus adipiscing dolor enim condimentum enim tortor. Tortor.</p>
-                    </div>
-
-                    <div className=' bg-white flex absolute left-[25%] sm:left-[40%] cursor-pointer bottom-[15%] rounded-2xl items-center gap-2 px-3 py-1'>
+                    {/* <div className=' bg-white flex absolute left-[25%] sm:left-[40%] cursor-pointer bottom-[15%] rounded-2xl items-center gap-2 px-3 py-1'>
                         <p className='font-bold'>View all Reviews</p>
                         <div className='bg-black w-[20px] h-[20px] rounded-full'>
                             <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className='w-full mt-[2em] mb-[5em]'>

@@ -71,7 +71,7 @@ export default function AboutUs() {
                         </div>
                     </div>
 
-                    <p className='my-5 text-[1rem]'>Footprint Mentorship is more than just a mentorship platform; we are the bridge between ambition and achievement. Our team is composed of seasoned professionals with extensive experience in the tech industry</p>
+                    <p className='my-5 text-[1rem]'>Footprint Mentorship is more than just a mentorship platform; we are the bridge between ambition and achievement. Our team is composed of seasoned professionals with extensive experience in the tech industry and HR sector.</p>
                 </div>
 
 
@@ -88,14 +88,14 @@ export default function AboutUs() {
                 <div className=' mx-auto'>
                     <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                         <div className=' w-fit bg-yellow  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Personalise Mentorship</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Personalise mentorship</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
 
                         <div className='bg-yellow w-fit  my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation opportunity</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
@@ -109,7 +109,7 @@ export default function AboutUs() {
                     </div>
 
                     <div className='bg-[#54E3EA] w-fit mx-auto  my-3 p-2 rounded-t-2xl rounded-br-2xl flex gap-2 items-center'>
-                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold  px-6'>Job application and interview Performace tracking and feedback</h3>
+                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold  px-6'>Performace tracking and feedback</h3>
                         <div className='bg-black w-[20px] h-[20px] rounded-full'>
                             <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                         </div>
@@ -124,49 +124,55 @@ export default function AboutUs() {
                             </div>
                         </div>
                         <div className='bg-[#2C6E49] text-white mx-auto w-fit  my-2 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className=' text-[1.2rem] sm:text-[1.5rem] font-bold px-6'>Agile and leadership training</h3>
+                            <h3 className=' text-[1.2rem] sm:text-[1.5rem] font-bold px-6'>LinkedIn optimazation</h3>
+                            <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                                <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                            </div>
+                        </div>
+                        <div className='bg-[#2C6E49] text-white mx-auto w-fit  my-2 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center shadow-lg'>
+                            <h3 className=' text-[1.2rem] sm:text-[1.5rem] font-bold px-6'>Mock interview</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
                     </div>
                     <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
-                    <div className=' bg-white my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Personalise Mentorship</h3>
-                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
-                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                        <div className=' bg-white my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center shadow-lg'>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Portfolio and projects</h3>
+                            <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                                <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                            </div>
                         </div>
-                    </div>
 
-                    <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation opportunity</h3>
-                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
-                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                        <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center shadow-lg'>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Vibrant job hunting ommunity</h3>
+                            <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                                <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                            </div>
+                        </div>
+                        <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center shadow-lg'>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job application guidance</h3>
+                            <div className='bg-black w-[20px] h-[20px] rounded-full'>
+                                <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
+                            </div>
                         </div>
                     </div>
-                    <div className='bg-white my-3 p-2 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                        <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Resume Review</h3>
-                        <div className='bg-black w-[20px] h-[20px] rounded-full'>
-                            <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
-                        </div>
-                    </div>
-                </div>
                     <div className='flex flex-wrap justify-center gap-3 md:gap-5 lg:px-10'>
                         <div className=' w-fit bg-yellow  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Mock interview</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Accountability support</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
 
                         <div className='bg-yellow w-fit  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Job recommendation opportunity</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Scrum team</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
                         </div>
                         <div className='bg-yellow w-fit  my-3 p-2 px-6 rounded-t-2xl rounded-bl-2xl flex gap-2 items-center'>
-                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Resume Review</h3>
+                            <h3 className='text-[1.2rem] sm:text-[1.5rem] font-bold'>Career development</h3>
                             <div className='bg-black w-[20px] h-[20px] rounded-full'>
                                 <img src={upicon} className='w-[12px] m-1' alt='up-right-icon' />
                             </div>
@@ -175,7 +181,7 @@ export default function AboutUs() {
                 </div>
 
             </div>
-            
+
 
         </div>
     )
