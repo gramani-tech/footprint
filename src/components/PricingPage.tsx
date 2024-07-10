@@ -7,7 +7,7 @@ const packages = [
     type: "free",
     price: "Free",
     features: [
-      "30 minutes free session with a mentor",
+      // "30 minutes free session with a mentor",
       "Join a Tech Community",
       "Have access to general jobs opportunity",
       "General dedicated community training/events"
@@ -23,6 +23,7 @@ const packages = [
       "Interview guidance",
       "Performance tracking and feedback",
       "Resume review by an expert",
+      "LinkedIn review and optimization",
       "Weekly access to a mentor",
       "Join a Tech Community"
     ]
@@ -37,6 +38,7 @@ const packages = [
       "Interview guidance",
       "Performance tracking and feedback",
       "Resume review by an expert",
+      "LinkedIn review and optimization",
       "Weekly access to a mentor",
       "Join a Tech Community",
       "One-on-one session with a therapist",
@@ -47,13 +49,14 @@ const packages = [
   {
     title: "GOLD PACKAGE",
     type: "experience",
-    price: "60,000 with 10% of 3 months salary",
+    price: "80,000 with 10% of 3 months salary",
     duration: "Premium (till mentee land a Job)",
     features: [
       "Job application guidance",
       "Interview guidance",
       "Performance tracking and feedback",
       "Resume review by an expert",
+      "LinkedIn review and optimization",
       "Weekly access to a mentor",
       "On demand mock interview",
       "Join a Tech Community",
