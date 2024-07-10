@@ -13,7 +13,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 
-export default function MobileNav({ setIsOpen }: { setIsOpen: (open: boolean) => void }) {
+export default function MobileNav() {
   const [open, setOpen] = useState(false)
 
   return (

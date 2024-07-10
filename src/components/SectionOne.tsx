@@ -1,7 +1,7 @@
 import image from '../assets/Auto Layout Vertical.jpg'
 import { ReactTyped } from "react-typed";
 
-export default function SectionOne({ setIsOpen }: { setIsOpen: (open: boolean) => void }) {
+export default function SectionOne() {
   const textArr = ["streamline your job search process.", "track and improve your interview performance.", "enhance your job  success rates.", "reduce the time it takes you to secure a new role."]
   return (
     <div className=' my-2 md:my-7 md:pt-10'>
