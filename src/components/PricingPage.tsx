@@ -24,7 +24,7 @@ const packages = [
     type: "experience",
     priceNaira: "50,000",
     priceDollar: "39",
-    duration: "1 month DURATION (access to a mentor)",
+    duration: "month duration",
     features: [
       "Job application guidance",
       "Interview guidance",
@@ -40,7 +40,7 @@ const packages = [
     type: "experience",
     priceNaira: "140,000",
     priceDollar: "99",
-    duration: "3 month DURATION (access to a mentor)",
+    duration: "3 months duration",
     features: [
       "Job application guidance",
       "Interview guidance",
@@ -57,9 +57,9 @@ const packages = [
   {
     title: "GOLD PACKAGE",
     type: "experience",
-    priceNaira: "80,000 with 10% of 3 months salary",
-    priceDollar: "69 with 10% of 3 months salary",
-    duration: "Premium (till mentee land a Job)",
+    priceNaira: "250,000",
+    priceDollar: "170",
+    duration: "6 months duration",
     features: [
       "Job application guidance",
       "Interview guidance",
@@ -76,8 +76,9 @@ const packages = [
   {
     title: "INTERNSHIP PACKAGE",
     type: "internship",
-    price: "100,000",
-    duration: "6 month DURATION (access to a mentor)",
+    priceNaira: "100,000",
+    priceDollar: "65",
+    duration: "6 months duration",
     features: [
       "Job application guidance",
       "Interview guidance",
@@ -137,8 +138,8 @@ const PricingPage = () => {
           {filterPackages.map((pkg, index) => (
             <div key={index} style={{ border: pkg.title == "DIAMOND PACKAGE" ? "2px solid #EECE12" : "2px solid #E5E7EB" }} className={`${pkg.title == "DIAMOND PACKAGE" ? "border-[#EECE12] " : "border-[#E5E7EB] border-2"}bg-white border-2 text-black p-6 rounded-lg shadow-lg  `}>
               <h2 className="text-2xl font-bold mb-4">{pkg.title}</h2>
-              <p className="text-xl font-semibold mb-4">{currencySymbols[priceIn as keyof typeof currencySymbols]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</p>
-              {pkg.duration && <p className="text-md font-medium mb-4">{pkg.duration}</p>}
+              <span className="text-[45px] font-semibold ">{currencySymbols[priceIn as keyof typeof currencySymbols]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</span>
+              {pkg.duration && <span className="text-md font-medium mb-4 text-[#9CA3AF]"> /{pkg.duration}</span>}
               <ul className=" list-inside ">
                 {pkg.features.map((feature, idx) => (
                   <li key={idx} className="mb-2 flex">
