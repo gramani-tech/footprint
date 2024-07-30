@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import line from '../assets/Line 1.svg'
+import Mark from '../assets/mark.png'
 
 const currencySymbols = {
   naira: '₦',
@@ -112,16 +113,21 @@ const PricingPage = () => {
             <img src={line} alt='line-image' className=' absolute bottom-[-25px] -z-10' />
           </h2>
         </div>
-        <div className="flex border w-[100%] border-gray rounded-[6px] md:w-[400px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
-          <button onClick={() => setSelectedPackage("experience")} className={`${selectedPackage === "experience" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Experience</button>
-          <button onClick={() => setSelectedPackage("internship")} className={`${selectedPackage === "internship" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Internship</button>
-          <button onClick={() => setSelectedPackage("free")} className={`${selectedPackage === "free" ? "bg-yellow " : "bg-gray"} border-0 py-2 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Free</button>
+        <div className="flex  w-[100%] bg-[#EDEAE8] rounded-[6px] md:w-[500px] mx-auto mt-10 px-1 md:px-2  justify-between">
+          <button onClick={() => setSelectedPackage("experience")} className={`${selectedPackage === "experience" ? "bg-white text-black px-8" : "bg-transparent text-[#c3c3c3]"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] `}>Experience</button>
+          <button onClick={() => setSelectedPackage("internship")} className={`${selectedPackage === "internship" ? "bg-white text-black px-8" : "bg-transparent text-[#c3c3c3]"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] `}>Internship</button>
+          <button onClick={() => setSelectedPackage("free")} className={`${selectedPackage === "free" ? "bg-white text-black px-8" : "bg-transparent text-[#c3c3c3]"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] `}>Free</button>
         </div>
 
-        <div className="flex  w-[100%] bg-[#54E3EA] rounded-[6px] md:w-[300px] mx-auto mt-10 px-1 md:px-5 py-2 justify-between">
-          <button onClick={() => setPriceIn("naira")} className={`${priceIn === "naira" ? "bg-yellow " : " bg-gray"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Naira (NGN)</button>
-          <button onClick={() => setPriceIn("dollar")} className={`${priceIn === "dollar" ? "bg-yellow " : "bg-gray"} border-0 py-1 md:my-2 font-bold px-3 rounded-[6px] text-white`}>Dollar (USD)</button>
-
+        <div className="flex  w-[100%] bg-[#EDEAE8] rounded-[6px] md:w-[300px] mx-auto mt-10 text-[#101928] align-middle items-center justify-center">
+          <div className="">
+            <label className="inline-flex items-center mb-5 cursor-pointer text-[20px] mt-5">
+              <span className="ms-3  mr-4 font-bold text-gray-900 dark:text-gray-300">Naira</span>
+              <input type="checkbox" value="" className="sr-only peer" />
+              <div className="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 bg-[#3E485B] peer-checked:bg-blue-600"></div>
+              <span className="ms-3 ml-4 font-bold text-gray-900 dark:text-gray-300">Dollars</span>
+            </label>
+          </div>
         </div>
 
       </div>
@@ -129,13 +135,19 @@ const PricingPage = () => {
         {/* <h1 className="text-4xl font-bold text-center mb-12">Our Pricing Plans</h1> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filterPackages.map((pkg, index) => (
-            <div key={index} className="bg-white text-black p-6 rounded-lg shadow-lg">
+            <div key={index} style={{ border: pkg.title == "DIAMOND PACKAGE" ? "2px solid #EECE12" : "2px solid #E5E7EB" }} className={`${pkg.title == "DIAMOND PACKAGE" ? "border-[#EECE12] " : "border-[#E5E7EB] border-2"}bg-white border-2 text-black p-6 rounded-lg shadow-lg  `}>
               <h2 className="text-2xl font-bold mb-4">{pkg.title}</h2>
               <p className="text-xl font-semibold mb-4">{currencySymbols[priceIn as keyof typeof currencySymbols]} {priceIn === 'naira' ? pkg.priceNaira : pkg.priceDollar}</p>
               {pkg.duration && <p className="text-md font-medium mb-4">{pkg.duration}</p>}
-              <ul className="list-disc list-inside">
+              <ul className=" list-inside ">
                 {pkg.features.map((feature, idx) => (
-                  <li key={idx} className="mb-2">{feature}</li>
+                  <li key={idx} className="mb-2 flex">
+                    <div className="mr-2">
+
+                      <img src={Mark} alt="mark" className='' />
+                    </div>
+                    {feature}
+                  </li>
                 ))}
               </ul>
             </div>
