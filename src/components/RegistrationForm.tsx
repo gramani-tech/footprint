@@ -1,13 +1,14 @@
-
-import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react';
+import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
 const RegistrationForm = ({ isOpen, setIsOpen }: any) => {
-
-
   return (
     // <dsiv className='w-[90vw] overflow-scroll'>
 
-    <Dialog className="relative z-40 " open={isOpen} onClose={() => setIsOpen(false)}>
+    <Dialog
+      className="relative z-40 "
+      open={isOpen}
+      onClose={() => setIsOpen(false)}
+    >
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-black bg-opacity-25 transition-opacity duration-300 ease-linear"
@@ -47,9 +48,9 @@ const RegistrationForm = ({ isOpen, setIsOpen }: any) => {
               src="https://docs.google.com/forms/d/e/1FAIpQLSenI_CH67M-eVggZd0jTGX115J2zCh3gjp544quW8orf33JeQ/viewform?embedded=true"
               width="640"
               height="1171"
-            // frameBorder="0"
-            // marginHeight="0"
-            // marginWidth="0"
+              // frameBorder="0"
+              // marginHeight="0"
+              // marginWidth="0"
             >
               Loading…
             </iframe>
